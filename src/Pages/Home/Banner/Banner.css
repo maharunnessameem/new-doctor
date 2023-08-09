@@ -1,5 +1,13 @@
-.banner {
-    border: 1px solid #043310;
-    border-radius: 5px;
-    box-shadow: 10px 10px 40px #328046;
+#banner {
+    /* border: 1px solid #043310; */
+    /* border-radius: 5px; */
+    box-shadow: 10px 10px 40px #393646;
+    /* margin-top: 20px; */
+    padding: 0;
+
+    margin: 20px 140px;
+    margin-right: 140px;
+
+
+
 }

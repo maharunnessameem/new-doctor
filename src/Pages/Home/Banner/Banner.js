@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import banner1 from '../../../images/banner/doctor3.png';
-import banner2 from '../../../images/banner/doctor2.png';
-import banner3 from '../../../images/banner/doctor1.png';
+import banner1 from '../../../images/banner/dr12.jpg';
+import banner2 from '../../../images/banner/dr13.jpg';
+import banner3 from '../../../images/banner/dr14.jpg';
 
 import './Banner.css'
 
@@ -13,7 +13,7 @@ const Banner = () => {
         setIndex(selectedIndex);
     };
     return (
-        <div className='container banner'>
+        <div id='banner' className='container'>
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img

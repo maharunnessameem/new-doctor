@@ -15,9 +15,10 @@ const Header = () => {
         <>
             <Navbar className='header' collapseOnSelect expand="lg" sticky='top' bg="" variant="dark" >
                 <Container>
-                    <Navbar.Brand as={Link} to="/">
+                    {/* <Navbar.Brand as={Link} to="/">
                         <img height={100} src={logo} alt="" />
-                    </Navbar.Brand>
+                    </Navbar.Brand> */}
+                    <Nav.Link as={Link} to="/">DR. MD OMAR FARUK</Nav.Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

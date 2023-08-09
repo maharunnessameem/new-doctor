@@ -1,12 +1,12 @@
 .footerDesign {
     height: 80px;
-    background-color: #043310;
+    background-color: #393646;
     align-items: center;
     justify-content: space-between;
     /* padding-left: 140px;
     padding-right: 140px; */
     color: white;
-    position: fixed;
+    /* position: fixed; */
     /* position: static; */
     bottom: 0;
     width: 100%;

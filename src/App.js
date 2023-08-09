@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./Shared/Header/Header";
-import Home from "./Pages/Home/Banner/Home/Home";
 import Footer from "./Shared/Footer/Footer";
+import Home from "./Pages/Home/Home";
+
+import './App.css'
 
 
 function App() {
   return (
-    <div >
+    <div className="App">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

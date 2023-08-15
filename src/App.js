@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 
 import './App.css'
 import About from "./Pages/Home/About/About";
+import Services from "./Pages/Home/Services/Services";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         </Route>
         <Route index element={<Home></Home>}></Route>
         {/* <Route path="/home" element={<Home></Home>}></Route> */}
-
+        <Route path="/services" element={<Services></Services>}></Route>
         <Route path="about" element={<About></About>}></Route>
       </Routes>
       <Footer></Footer>

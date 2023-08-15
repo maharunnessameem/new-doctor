@@ -6,12 +6,23 @@ import banner3 from '../../../images/banner/dr14.jpg';
 
 import './Banner.css'
 import { Link } from 'react-router-dom';
+import Modal from './Emergency/Modal';
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
+    };
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
     return (
         <div id='banner' className='mx-40  my-18 rounded'>
@@ -26,8 +37,19 @@ const Banner = () => {
                         <Carousel.Caption className='text-dark bg-slate-500 lg:mx-60 sm:mx-10 sm:mb-0 font-bold'>
                             <h3 >Dr. Faruk</h3>
                             <div className='flex gap-2 justify-center mt-2'>
-                                <button className='bg-slate-200 p-1 rounded text-xs'>BOOK APOINMENT</button>
-                                <button className='bg-slate-200 p-1 rounded text-xs'>EMERGENCY CALL</button>
+                                <Link to={"/services"}>
+                                    <button className='bg-slate-200 p-1 rounded text-xs'>BOOK APOINMENT</button>
+                                </Link>
+                                <button
+                                    onClick={openModal}
+                                    className='bg-slate-200 p-1 rounded text-xs'
+                                >
+                                    EMERGENCY CALL
+                                </button>
+                                <Modal isOpen={isModalOpen} onClose={closeModal}>
+                                    <p>Call +880 1639907974</p>
+                                    <p>Ambulance +880 24687648</p>
+                                </Modal>
                             </div>
                             {/* <p>Cardiologist</p> */}
                         </Carousel.Caption>
@@ -42,8 +64,21 @@ const Banner = () => {
                         <Carousel.Caption className='text-dark bg-slate-500 lg:mx-60 sm:mx-10 sm:mb-0 font-bold'>
                             <h3 >Dr. Faruk</h3>
                             <div className='flex gap-2 justify-center mt-2'>
-                                <button className='bg-slate-200 p-1 rounded text-xs'>BOOK APOINMENT</button>
-                                <button className='bg-slate-200 p-1 rounded text-xs'>EMERGENCY CALL</button>
+                                <Link to={"/services"}>
+                                    <button className='bg-slate-200 p-1 rounded text-xs'>BOOK APOINMENT</button>
+                                </Link>
+                                <button
+                                    onClick={openModal}
+                                    className='bg-slate-200 p-1 rounded text-xs'
+                                >
+                                    EMERGENCY CALL
+                                </button>
+                                <Modal isOpen={isModalOpen} onClose={closeModal}>
+
+                                    <p>Call +880 1639907974</p>
+                                    <p>Ambulance +880 24687648</p>
+
+                                </Modal>
                             </div>
                             {/* <p>Cardiologist</p> */}
                         </Carousel.Caption>
@@ -61,7 +96,17 @@ const Banner = () => {
                                 <Link to={"/services"}>
                                     <button className='bg-slate-200 p-1 rounded text-xs'>BOOK APOINMENT</button>
                                 </Link>
-                                <button className='bg-slate-200 p-1 rounded text-xs'>EMERGENCY CALL</button>
+                                {/* <button className='bg-slate-200 p-1 rounded text-xs'>EMERGENCY CALL</button> */}
+                                <button
+                                    onClick={openModal}
+                                    className='bg-slate-200 p-1 rounded text-xs'
+                                >
+                                    EMERGENCY CALL
+                                </button>
+                                <Modal isOpen={isModalOpen} onClose={closeModal}>
+                                    <p>Call +880 1639907974</p>
+                                    <p>Ambulance +880 24687648</p>
+                                </Modal>
                             </div>
                             {/* <p>Cardiologist</p> */}
                         </Carousel.Caption>

@@ -1,0 +1,19 @@
+.socialItems {
+    display: flex;
+    margin-top: 20px;
+
+    /* justify-content: left; */
+
+}
+
+.headerSocialIteams {
+
+    padding: 7px 15px;
+    font-size: 22px;
+    box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+}

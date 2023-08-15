@@ -1,0 +1,20 @@
+.react-calendar {
+    width: 350px;
+    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+    /* background-color: #fff; */
+    background-color: #393646;
+    /* color: #222; */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+    padding: 20px;
+
+}
+
+.appoinment {
+    box-shadow: 10px 10px 40px #393646;
+}

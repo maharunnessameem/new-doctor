@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import './App.css'
 import About from "./Pages/Home/About/About";
 import Services from "./Pages/Home/Services/Services";
+import Appoinment from "./Pages/Appoinment/Appoinment";
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
         {/* <Route path="/home" element={<Home></Home>}></Route> */}
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="about" element={<About></About>}></Route>
+        <Route path="/appoinment" element={<Appoinment></Appoinment>}></Route>
       </Routes>
+
       <Footer></Footer>
     </div>
   );
